@@ -393,22 +393,13 @@ void Towers::reset() {
 
 bool Towers::check1(int start, int stop) {
 	reset();
-	int i = 0;
+	
 	for (int i = 0; i <= stop; i++)
 	{
 		if (seen[arr[start][i] - 1])
 			return false;
 		else seen[arr[start][i] - 1] = true;
 	}
-	/*
-	while (arr[start][i] != -1)
-	{
-		if (seen[arr[start][i] - 1])
-			return false;
-		else seen[arr[start][i] - 1] = true;
-
-		i++;
-	}*/
 
 	return true;
 }
@@ -497,10 +488,6 @@ int main() {
 	test.setBot(3, 2, 1, 2, 2);
 	test.setRight(1, 2, 3, 2, 3);
 	test.setLeft(4, 2, 1, 2, 2);
-	/*test.setTop(5, 5, 5, 5, 5);
-	test.setBot(5, 5, 5, 5, 5);
-	test.setRight(5, 5, 5, 5, 5);
-	test.setLeft(5, 5, 5, 5, 5);*/
 
 	steady_clock::time_point t1;
 	steady_clock::time_point t2;
