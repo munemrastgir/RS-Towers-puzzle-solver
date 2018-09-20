@@ -14,10 +14,23 @@ int main() {
 	test.setRight(3, 2, 2, 1, 3);
 	test.setLeft(2, 3, 1, 3, 2);*/
 	
-	test.setTop(2, 4, 1, 2, 3);
-	test.setBot(3, 2, 3, 2, 1);
-	test.setRight(2, 1, 3, 2, 3);
-	test.setLeft(3, 4, 2, 2, 1);
+	int a = 0, b = 0, c = 0, d = 0, e = 0;
+	
+	cout << "Enter 5 numbers for top" << endl;
+	cin >> a >> b >> c >> d >> e;
+	test.setTop(a, b, c, d, e);
+
+	cout << "Enter 5 numbers for bottom" << endl;
+	cin >> a >> b >> c >> d >> e;
+	test.setBot(a, b, c, d, e);
+
+	cout << "Enter 5 numbers for left" << endl;
+	cin >> a >> b >> c >> d >> e;
+	test.setRight(a, b, c, d, e);
+
+	cout << "Enter 5 numbers for right" << endl;
+	cin >> a >> b >> c >> d >> e;
+	test.setLeft(a, b, c, d, e);
 
 
 
